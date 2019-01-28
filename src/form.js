@@ -1,6 +1,7 @@
 import LinkedList from '../src/linkedLists/linkedlist';
 import React, { Component, Fragment } from 'react';
 import dateFormat from 'dateformat';
+import MyCard from './card';
 const now = new Date();
 const list = new LinkedList();
 
@@ -88,6 +89,7 @@ export default class Form extends Component {
         <button onClick={this.reverse}>reverse a string</button>
         <h3>{this.state.ll}</h3>
         <button onClick={this.addToList}>add to list</button>
+        <MyCard/>
       </Fragment>
     );
   
